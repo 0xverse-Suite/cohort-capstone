@@ -1,0 +1,189 @@
+name: Bug Report
+description: Report reproducible incorrect behavior
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+
+*** Add File: 0xverse/cohort-capstone/.github/ISSUE_TEMPLATE/feature-request.yml
+name: Feature Request
+description: Propose a user-focused capability
+title: "[Feature]: "
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+*** Add File: 0xverse/cohort-capstone/.github/ISSUE_TEMPLATE/documentation.yml
+name: Documentation
+description: Add or improve project documentation
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: Documentation change
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended audience
+*** Add File: 0xverse/cohort-capstone/.github/ISSUE_TEMPLATE/config.yml
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a mentor
+    url: https://github.com/orgs/0xverse-suite/teams/mentors
+    about: Use the mentor team for questions that are not actionable issues.
+*** Add File: 0xverse/cohort-capstone/.github/CODEOWNERS
+* @0xverse-suite/mentors
+/apps/ @0xverse-suite/frontend @0xverse-suite/mobile
+/backend/ @0xverse-suite/backend
+/ai/ @0xverse-suite/ai
+/docs/ @0xverse-suite/mentors @0xverse-suite/admins
+/database/ @0xverse-suite/backend
+*** Add File: 0xverse/cohort-capstone/apps/.gitkeep
+
+*** Add File: 0xverse/cohort-capstone/backend/.gitkeep
+
+*** Add File: 0xverse/cohort-capstone/ai/.gitkeep
+
+*** Add File: 0xverse/cohort-capstone/database/.gitkeep
+
+*** Add File: 0xverse/cohort-capstone/docs/README.md
+# Documentation
+
+Store approved product requirements, architecture decisions, runbooks, and onboarding notes here.
+*** Add File: 0xverse/academy-website/README.md
+# 0xVerse Academy Website
+
+This repository is the canonical workspace for the official 0xVerse Academy website. Product code will be added through reviewed Issues and pull requests.
+
+## Workflow
+
+Work from an assigned Issue on `feature/<student-or-team>/<task>` or `fix/<area>/<task>`. Open a pull request, link the Issue, pass checks, and obtain a mentor review before merge. Direct pushes to `main` are prohibited.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+*** Add File: 0xverse/academy-website/CONTRIBUTING.md
+# Contributing
+
+Start from an assigned Issue. Branch from current `main` using `feature/<student-or-team>/<task>` or `fix/<area>/<task>`, make focused commits, and open a pull request with `Closes #<number>`. A mentor must approve before merge. Never commit secrets, `.env` files, credentials, or personal data.
+*** Add File: 0xverse/academy-website/.gitignore
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+node_modules/
+dist/
+build/
+coverage/
+.DS_Store
+Thumbs.db
+*** Add File: 0xverse/academy-website/.github/PULL_REQUEST_TEMPLATE.md
+## Summary
+
+Closes #
+
+## Verification
+
+- [ ] Tested locally
+- [ ] Tests and documentation updated where appropriate
+- [ ] No secrets or personal data committed
+- [ ] UI evidence attached where applicable
+*** Add File: 0xverse/academy-website/.github/CODEOWNERS
+* @0xverse-suite/mentors
+/apps/ @0xverse-suite/frontend
+/docs/ @0xverse-suite/mentors @0xverse-suite/admins
+*** Add File: 0xverse/academy-website/docs/.gitkeep
+
+*** Add File: 0xverse/academy-website/apps/.gitkeep
+
+*** Add File: 0xverse/student-projects/README.md
+# 0xVerse Student Projects
+
+This repository is the academy's index and guidance hub for independent student projects. Independent applications should normally use separate repositories named for the project without exposing unnecessary personal information.
+
+## Contents
+
+- `project-index/` — reviewed links and short descriptions
+- `templates/` — lightweight planning and delivery guidance
+- `docs/` — onboarding and assessment documentation
+
+This is not a monorepo for every student application.
+*** Add File: 0xverse/student-projects/CONTRIBUTING.md
+# Contributing
+
+Use an assigned Issue and create `feature/<student-or-team>/<task>`. Submit changes through a pull request, link the Issue, and obtain mentor approval. Do not add private student information, credentials, or secrets to this public index.
+*** Add File: 0xverse/student-projects/.gitignore
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+service-account*.json
+.DS_Store
+Thumbs.db
+*** Add File: 0xverse/student-projects/.github/PULL_REQUEST_TEMPLATE.md
+## Project/index change
+
+Closes #
+
+- [ ] Links were verified
+- [ ] No private student information or secrets are included
+- [ ] Mentor review requested
+*** Add File: 0xverse/student-projects/.github/CODEOWNERS
+* @0xverse-suite/mentors
+/project-index/ @0xverse-suite/mentors
+/templates/ @0xverse-suite/mentors @0xverse-suite/admins
+*** Add File: 0xverse/student-projects/project-index/README.md
+# Project Index
+
+Add approved independent projects here using a short description, repository link, technology summary, and current status. Avoid unnecessary personal information.
+*** Add File: 0xverse/student-projects/templates/project-entry.md
+# Project name
+
+- Repository:
+- Summary:
+- Technology:
+- Status: proposed | active | review | complete
+*** Add File: 0xverse/student-projects/docs/README.md
+# Student Project Guidance
+
+Mentors can publish onboarding, assessment, and delivery guidance here.

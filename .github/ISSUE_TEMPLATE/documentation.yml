@@ -1,0 +1,16 @@
+name: Documentation
+description: Add or improve project documentation
+title: "[Docs]: "
+labels: ["documentation"]
+body:
+  - type: textarea
+    id: change
+    attributes:
+      label: Documentation change
+    validations:
+      required: true
+  - type: textarea
+    id: audience
+    attributes:
+      label: Intended audience
+

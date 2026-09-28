@@ -1,0 +1,28 @@
+name: Student Task
+description: A scoped unit of work for a student or team
+title: "[Task]: "
+labels: ["task", "student-task"]
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: Describe the outcome, not only the implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: "- [ ] Observable result"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and references
+  - type: textarea
+    id: testing
+    attributes:
+      label: Verification notes
+      description: Explain how completion should be tested.

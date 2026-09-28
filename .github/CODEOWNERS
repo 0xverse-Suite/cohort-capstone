@@ -1,0 +1,7 @@
+* @0xverse-suite/mentors
+/apps/ @0xverse-suite/frontend @0xverse-suite/mobile
+/backend/ @0xverse-suite/backend
+/ai/ @0xverse-suite/ai
+/docs/ @0xverse-suite/mentors @0xverse-suite/admins
+/database/ @0xverse-suite/backend
+
