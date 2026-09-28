@@ -8,6 +8,8 @@ The 0xVerse Cohort Capstone is the shared, cohort-wide software workspace for 0x
 - `backend/` — APIs, authentication, and server-side services
 - `ai/` — approved AI, automation, and data workflows
 - `database/` — schemas, migrations, and data documentation
+- `design/` — UI/UX, brand, and approved visual assets
+- `analytics/` — measurement, reporting, and non-sensitive analysis
 - `docs/` — product, architecture, and operational decisions
 
 ## Contribution workflow
@@ -37,3 +39,7 @@ Runtime-specific setup will be added once the cohort selects its product and tec
 Pull requests should be small, explain how the change was tested, and include screenshots for visible UI changes. Reviewers check correctness, security, accessibility, maintainability, and alignment with the Issue. One approving review is required before merge.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the complete student workflow.
+
+## Cross-disciplinary capstone
+
+The capstone joins frontend, backend, fullstack, AI, mobile, UI/UX, graphics design, and data analytics students around one larger product. Course repositories remain learning workspaces; this repository is the shared integration environment. Each discipline works from assigned Issues and submits reviewed contributions through its responsible team.

@@ -4,4 +4,5 @@
 /ai/ @0xverse-suite/ai
 /docs/ @0xverse-suite/mentors @0xverse-suite/admins
 /database/ @0xverse-suite/backend
-
+/design/ @0xverse-suite/uiux @0xverse-suite/graphics-design
+/analytics/ @0xverse-suite/data-analytics
